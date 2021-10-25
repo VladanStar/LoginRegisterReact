@@ -1,10 +1,11 @@
 import React from "react";
-import loginImg from "../../../src/login.svg";
+import loginImg from "../../login.svg";
 
-class Login extends React.Component {
+export class Login extends React.Component {
   constructor(props) {
     super(props);
   }
+
   render() {
     return (
       <div className="base-container" ref={this.props.containerRef}>
@@ -33,4 +34,3 @@ class Login extends React.Component {
     );
   }
 }
-export default Login;

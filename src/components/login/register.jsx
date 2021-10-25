@@ -1,10 +1,11 @@
 import React from "react";
-import loginImg from "../../../src/login.svg";
+import loginImg from "../../login.svg";
 
-class Register extends React.Component {
+export class Register extends React.Component {
   constructor(props) {
     super(props);
   }
+
   render() {
     return (
       <div className="base-container" ref={this.props.containerRef}>
@@ -20,11 +21,11 @@ class Register extends React.Component {
             </div>
             <div className="form-group">
               <label htmlFor="email">Email</label>
-              <input type="email" name="email" placeholder="email" />
+              <input type="text" name="email" placeholder="email" />
             </div>
             <div className="form-group">
               <label htmlFor="password">Password</label>
-              <input type="password" name="password" placeholder="password" />
+              <input type="text" name="password" placeholder="password" />
             </div>
           </div>
         </div>
@@ -37,4 +38,3 @@ class Register extends React.Component {
     );
   }
 }
-export default Register;
